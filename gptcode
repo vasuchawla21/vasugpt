@@ -1,0 +1,78 @@
+// VASU 'Insane' GPT Portfolio - Next.js + TailwindCSS Starter
+
+// Project structure
+// pages/
+// ├── index.tsx (Home)
+// ├── about.tsx
+// ├── services.tsx
+// ├── portfolio.tsx
+// └── contact.tsx
+
+// tailwind.config.ts is preconfigured for dark + neon theme
+// Components: Navbar, Footer, Card, ServiceCard, ProjectCarousel, ContactForm, NewsletterSignup
+
+export default function Home() {
+  return (
+    <main className="bg-black text-white font-sans min-h-screen">
+      <section className="px-6 py-16 text-center">
+        <h1 className="text-4xl md:text-6xl font-bold text-neon-purple">
+          VASU ‘Insane’ GPT — Turning Bold Ideas Into Viral Content
+        </h1>
+        <p className="text-lg md:text-xl mt-4 max-w-2xl mx-auto text-gray-300">
+          I'm a creator and strategist who helps brands and individuals dominate social media using AI, storytelling, and unconventional marketing.
+        </p>
+        <div className="flex justify-center gap-4 mt-8">
+          <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full shadow-lg transition">
+            View Work
+          </button>
+          <button className="border border-orange-400 hover:bg-orange-500 hover:text-white text-orange-400 px-6 py-3 rounded-full transition">
+            Let’s Collaborate
+          </button>
+        </div>
+      </section>
+
+      {/* Placeholder for animated hero image or background video */}
+      <section className="px-6 py-12">
+        <h2 className="text-2xl text-neon-blue font-semibold mb-4">Work For Brands Like</h2>
+        <div className="flex flex-wrap justify-center gap-6 opacity-70">
+          <img src="/brands/wowmomo.png" alt="WOW! Momo" className="h-12" />
+          <img src="/brands/akvo.png" alt="Akvo" className="h-12" />
+          <img src="/brands/fitnflex.png" alt="Fit & Flex" className="h-12" />
+          <img src="/brands/nilon.png" alt="Nilon's" className="h-12" />
+          <img src="/brands/verismart.png" alt="Verismart AI" className="h-12" />
+          <img src="/brands/anveshan.png" alt="Anveshan" className="h-12" />
+        </div>
+      </section>
+
+      {/* Newsletter Integration */}
+      <section className="px-6 py-20 text-center border-t border-gray-800">
+        <h2 className="text-3xl md:text-4xl font-bold text-neon-purple">Join My AI Newsletter</h2>
+        <p className="mt-2 text-lg md:text-gray-400 max-w-xl mx-auto">
+          Get the latest on AI tools, insane content ideas, and future trends — straight from VASU GPT.
+        </p>
+        <div className="mt-6">
+          {/* Placeholder for Beehiiv embed code */}
+          <div className="w-full max-w-xl mx-auto">
+            <iframe 
+              src="https://your-beehiiv-url.beehiiv.com/embed" 
+              height="200" 
+              width="100%" 
+              style={{ border: 'none', borderRadius: '8px' }}
+              title="Beehiiv Signup"></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section className="px-6 py-20 text-center border-t border-gray-800 mt-10">
+        <h2 className="text-3xl md:text-4xl font-bold text-neon-green">The future is insane.</h2>
+        <p className="mt-2 text-lg md:text-xl text-gray-400">Let’s create it together.</p>
+
+        {/* Footer Section */}
+        <div className="mt-8 flex justify-center gap-6">
+          <a href="https://www.instagram.com/vasu_gpt/" target="_blank" rel="noopener noreferrer" className="hover:text-neon-purple">Instagram</a>
+          <a href="https://www.linkedin.com/in/vasugpt-ai/" target="_blank" rel="noopener noreferrer" className="hover:text-neon-blue">LinkedIn</a>
+        </div>
+      </section>
+    </main>
+  );
+}
